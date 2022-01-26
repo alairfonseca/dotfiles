@@ -35,3 +35,7 @@ keymap('n', '<leader>fh', ':Telescope help_tags<CR>', opts)
 -- navigate between tabs (left, right)
 keymap('n', '<leader>h', ':BufferLineCyclePrev<CR>', opts)
 keymap('n', '<leader>l', ':BufferLineCycleNext<CR>', opts)
+
+-- nvim tree
+keymap('n', '<c-n>', ':NvimTreeToggle<CR>', opts)
+

@@ -6,7 +6,8 @@ end
 
 lsp_installer.on_server_ready(function(server)
     local opts = {
-      -- on_attach = require("")
+	on_attach = require("plugins.lsp_config.handlers").on_attach,
+	capabilities = require("plugins.lsp_config.handlers").capabilities,
     }
 
     if server.name == "rust_analyzer" then
@@ -19,6 +20,11 @@ lsp_installer.on_server_ready(function(server)
             server = vim.tbl_deep_extend("force", server:get_default_options(), opts),
         }
         server:attach_buffers()
+    end
+
+    if server.name == "pyright" then
+    	local pyright_opts = require("plugins.lsp_config.settings.pyright")
+	opts = vim.tbl_deep_extend("force", pyright_opts, opts)
     end
 
     server:setup(opts)

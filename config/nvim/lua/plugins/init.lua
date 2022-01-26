@@ -56,6 +56,10 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-path' -- path completions
   use 'hrsh7th/cmp-cmdline' -- comandline completion
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lua'
+
+  -- Debug
+  -- use 'mfussenegger/nvim-dap'
 
   -- Autopairs
   use "windwp/nvim-autopairs"
