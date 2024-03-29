@@ -2,8 +2,5 @@
 [user]
 	name = Alair Fonseca
 	email = alairfonseca13@gmail.com
-# Please adapt and uncomment the following lines:
-#	name = Alair Fonseca
-#	email = alairfonseca@Alairs-Laptop.local
 [init]
 	defaultBranch = master
