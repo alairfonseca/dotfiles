@@ -1,0 +1,8 @@
+./alacritty/alacritty
+./alacritty/themes
+./nvim/nvim
+./tmux/plugins
+./tmux/plugins/
+./tmux/plugins/*
+./tmux/tmux
+./git/git
