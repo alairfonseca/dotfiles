@@ -16,3 +16,6 @@ ln -s $DOT_FILES/starship/starship.toml ~/.config/starship.toml
 # setup alacritty theme
 mkdir -p ~/.config/alacritty/themes
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
+# setup tmxu package manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
