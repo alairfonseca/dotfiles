@@ -1,5 +1,5 @@
-if [ -f ~/.config/zsh/.aliases.zsh ]; then
-    source ~/.config/zsh/.aliases.zsh
+if [ -f ~/.config/zsh/aliases.zsh ]; then
+    source ~/.config/zsh/aliases.zsh
 else
     print "404: ~/.zsh/aliases.zsh not found."
 fi
