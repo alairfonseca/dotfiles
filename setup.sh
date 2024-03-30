@@ -2,8 +2,11 @@
 
 DOT_FILES=$HOME/.dotfiles
 
+mkdir ~/.config/zsh
+
 # dotfiles linking
 ln -s $DOT_FILES/zsh/.zshrc ~/.zshrc
+ln -s $DOT_FILES/zsh/aliases.zsh ~/.config/zsh/aliases.zsh
 ln -s $DOT_FILES/git/ ~/.config/git
 ln -s $DOT_FILES/alacritty/ ~/.config/alacritty
 ln -s $DOT_FILES/tmux/ ~/.config/tmux

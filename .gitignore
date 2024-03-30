@@ -1,6 +1,15 @@
+git/git
 alacritty/alacritty
 alacritty/themes
-nvim/nvim
 tmux/plugins
 tmux/tmux
-git/git
+nvim/nvim
+
+nvim/tt.*
+nvim/.tests
+nvim/doc/tags
+nvim/debug
+nvim/.repro
+nvim/foo.*
+nvim/*.log
+nvim/data

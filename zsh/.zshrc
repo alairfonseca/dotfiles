@@ -1,17 +1,12 @@
-#quickly edit and source .zshrc
-alias vz="nvim ~/.zshrc"
-alias sz="source ~/.zshrc; echo '~/.zshrc sourced'"
+if [ -f ~/.config/zsh/.aliases.zsh ]; then
+    source ~/.config/zsh/.aliases.zsh
+else
+    print "404: ~/.zsh/aliases.zsh not found."
+fi
 
 # use yellow for directories
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
-
-# IP alias and functions
-alias ip="ifconfig -a | egrep -A 7 '^en0' | grep inet | grep -oE '((1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])\.){3}(1?[0-9][0-9]?|2[0-4][0-9]|25[0-5])' | head -n 1"
-alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"
-
-# Pretty print the PATH
-alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
 #case-insensitive autocomplete
 autoload -Uz compinit && compinit
