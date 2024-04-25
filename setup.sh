@@ -14,8 +14,12 @@ ln -s $DOT_FILES/nvim/ ~/.config/nvim
 ln -s $DOT_FILES/starship/starship.toml ~/.config/starship.toml
 
 # setup alacritty theme
-mkdir -p ~/.config/alacritty/themes
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+if [ ! -d ~/.config/alacritty/themes ]; then
+  mkdir -p ~/.config/alacritty/themes
+  git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+fi
 
 # setup tmxu package manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if [ ! -d ~/.tmux/plugins/tpm ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi

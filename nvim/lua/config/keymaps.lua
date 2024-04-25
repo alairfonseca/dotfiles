@@ -21,5 +21,5 @@ keymap.set("n", "<S-up>", "5<C-w>+")
 keymap.set("n", "<S-down>", "5<C-w>-")
 
 keymap.set("n", "<leader>i", function()
-  require("a3r.lsp").toggleInlayHints()
+  require("a10a.lsp").toggleInlayHints()
 end)
