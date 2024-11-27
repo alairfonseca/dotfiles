@@ -1,6 +1,4 @@
-import = [
-    "~/.config/alacritty/themes/themes/github_dark.toml"
-]
+import = ["~/.config/alacritty/themes/themes/github_dark.toml"]
 
 [font]
 size = 18
@@ -9,7 +7,7 @@ size = 18
 family = "JetBrainsMono Nerd Font"
 
 [window]
-opacity = 0.2
+opacity = 0.8
 #decorations = "none"
 blur = true
 

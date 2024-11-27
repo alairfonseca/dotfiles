@@ -15,8 +15,8 @@ keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
 
 -- Resize window
-keymap.set("n", "<S-left>", "10<C-w><")
-keymap.set("n", "<S-right>", "10<C-w>>")
+keymap.set("n", "<S-left>", "1<C-w><")
+keymap.set("n", "<S-right>", "1<C-w>>")
 keymap.set("n", "<S-up>", "5<C-w>+")
 keymap.set("n", "<S-down>", "5<C-w>-")
 

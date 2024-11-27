@@ -13,3 +13,5 @@ nvim/.repro
 nvim/foo.*
 nvim/*.log
 nvim/data
+
+**.log
