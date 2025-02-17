@@ -31,6 +31,7 @@ return {
           "--completion-style=detailed",
           "--function-arg-placeholders",
           "--fallback-style=llvm",
+          "--header-insertion=never",
         },
         init_options = {
           usePlaceholders = true,

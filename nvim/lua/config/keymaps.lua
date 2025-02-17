@@ -7,8 +7,8 @@ local opts = { noremap = true, silent = true }
 
 -- tabs
 keymap.set("n", "te", ":tabedit<Return>", opts)
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+-- keymap.set("n", "<tab>", ":tabnext<Return>", opts)
+-- keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
@@ -19,6 +19,12 @@ keymap.set("n", "<S-left>", "1<C-w><")
 keymap.set("n", "<S-right>", "1<C-w>>")
 keymap.set("n", "<S-up>", "5<C-w>+")
 keymap.set("n", "<S-down>", "5<C-w>-")
+
+-- keymap.set("n", "<C-o>", "<Nop>", { silent = true, desc = "Disable jump backward" })
+-- keymap.set("n", "<C-[>", "<Nop>", { silent = true, desc = "Disable jump backward" })
+-- keymap.set("n", "<C-]>", "<Nop>", { silent = true, desc = "Disable jump backward" })
+-- keymap.set("n", "<C-[>", "<C-o>", { silent = true, desc = "Jump backward (was <C-o>)" })
+-- keymap.set("n", "<C-]>", "<C-i>", opts)
 
 keymap.set("n", "<leader>i", function()
   require("a10a.lsp").toggleInlayHints()
